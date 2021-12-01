@@ -1,0 +1,35 @@
+.card {
+  border-radius: 0.1875rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 13%);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  max-width: 400px;
+  height: 200px;
+  padding: 30px;
+}
+.card h4 {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  margin-top: 18px;
+  padding-bottom: 12px;
+  position: relative;
+}
+.card img {
+}
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 13.2px;
+  margin-top: 6px;
+}
+.card p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 18px;
+  margin-top: 6px;
+}

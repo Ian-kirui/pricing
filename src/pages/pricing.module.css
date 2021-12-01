@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.container h1 {
+  margin: 0;
+  align-self: center;
+  font-size: 24px;
+}
+.container p {
+  margin: 0;
+  align-self: center;
+  font-size: 14px;
+}
+.priceCards {
+  display: flex;
+  padding: 50px 0px 50px 0px;
+  flex-wrap: wrap;
+  gap: 33px;
+  max-width: 1440px;
+  justify-content: center;
+}
+.priceCardWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.priceCardWrapper p {
+  margin: 0;
+  align-self: center;
+  font-size: 14px;
+}
+.container ul {
+  margin: 0;
+  align-self: center;
+  font-size: 14px;
+}
+.badgeContainer {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.badgeContainer h1 {
+  margin: 0;
+  align-self: center;
+  font-size: 24px;
+}
+.badgeContainer p {
+  margin: 0;
+  margin-bottom: 20px;
+  align-self: center;
+  font-size: 14px;
+}
+
+.badgeContainer img {
+  max-width: 283px;
+  height: 100px;
+  align-self: center;
+}
+.brandContainer {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.brandContainer p {
+  margin: 10;
+  margin-bottom: 20px;
+  align-self: center;
+  font-size: 14px;
+}
+.brandContainer h1 {
+  margin: 10;
+  align-self: center;
+  font-size: 24px;
+}
+.productCardWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.productCard {
+  justify-content: center;
+  display: flex;
+  padding: 50px;
+}
+.bannerCardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.bannerCardWrapper h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  margin-top: 18px;
+  padding-bottom: 12px;
+  position: relative;
+}
