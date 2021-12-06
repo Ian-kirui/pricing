@@ -1,5 +1,5 @@
 import React from "react"
-import laptopIcon from "../../public/assets/laptop.svg"
+import laptopIcon from "../images/laptop.svg"
 import { priceCard } from "./pricecard.module.css"
 
 function App() {

@@ -5,7 +5,7 @@ import GoldCard from "../components/goldCard"
 import BusinessCard from "../components/businessCard"
 import BannerCard from "../components/bannerCard"
 import * as styles from "./pricing.module.css"
-import SellerBagde from "../../public/assets/seller badge.svg"
+import SellerBagde from "../images/seller badge.svg"
 
 const pricing = () => {
   const electronics = [

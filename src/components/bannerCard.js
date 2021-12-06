@@ -1,5 +1,5 @@
 import React from "react"
-import lineIcon from "../../public/assets/line.svg"
+import lineIcon from "../images/line.svg"
 import { card } from "./bannerCard.module.css"
 
 function App() {
