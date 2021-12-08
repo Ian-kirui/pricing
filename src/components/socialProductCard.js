@@ -3,15 +3,15 @@ import {
   productCard,
   productDuration,
   productPrice,
-} from "./productCard.module.css"
+} from "./socialProductCard.module.css"
 
 function App() {
-  return <ProductCard duration="1 Year" price="kes 2,500" />
+  return <SocialProductCard duration="2 weeks" price="Ksh 14,000" />
 }
 
 export default App
 
-function ProductCard(props) {
+function SocialProductCard(props) {
   const { duration, price } = props
   return (
     <div className={productCard}>

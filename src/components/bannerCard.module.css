@@ -1,14 +1,18 @@
+.bannerCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
 .card {
-  border-radius: 0.1875rem;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 13%);
   align-items: center;
+  max-width: 400px;
+  width: 400px;
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  position: relative;
   font-family: "Roboto", sans-serif;
-  max-width: 400px;
-  height: 200px;
-  padding: 30px;
 }
 .card h4 {
   font-size: 16px;

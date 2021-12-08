@@ -20,16 +20,16 @@
   padding: 50px 0px 50px 0px;
   flex-wrap: wrap;
   gap: 33px;
-  max-width: 1440px;
+
   justify-content: center;
 }
-.priceCardWrapper {
+/* .priceCardWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
-}
+} */
 .priceCardWrapper p {
   margin: 0;
   align-self: center;
@@ -38,8 +38,9 @@
 .container ul {
   margin: 0;
   align-self: center;
-  font-size: 14px;
+  font-size: 18px;
 }
+
 .badgeContainer {
   display: flex;
   flex-direction: column;

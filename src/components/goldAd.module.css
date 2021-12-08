@@ -1,0 +1,34 @@
+.GoldCardWrapper {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 750px;
+  height: 100px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  border-radius: 2px;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  font-family: "Roboto", sans-serif;
+  margin: 10px; */
+}
+
+.CardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-top: -24px;
+  padding-left: 0;
+}
+.Card {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}

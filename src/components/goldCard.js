@@ -1,22 +1,28 @@
 import React from "react"
-import laptopIcon from "../images/laptop.svg"
-import { priceCard } from "./pricecard.module.css"
+import lineIcon from "../images/line.svg"
+import { Card, GoldCardWrapper } from "./goldCard.module.css"
 
 function App() {
   return (
-    <PriceCard laptop="laptop" electronics="Electronics" kes200="kes.200" />
+    <div className={GoldCardWrapper}>
+      <GoldCard title="Gold Business" duration="1 year" price="KSh 45,000" />
+      <GoldCard title="Gold Business" duration="6 months" price="KSh 25,000" />
+      <GoldCard title="Gold Business" duration="3 months" price="KSh 13,500" />
+      <GoldCard title="Gold Business" duration="1 month" price="KSh 5,000" />
+    </div>
   )
 }
 export default App
 
-function PriceCard(props) {
-  const { laptop, electronics, kes200 } = props
+function GoldCard(props) {
+  const { title, duration, price } = props
 
   return (
-    <div className={priceCard}>
-      <img src={laptopIcon}></img>
-      <h3>{electronics}</h3>
-      <p>{kes200}</p>
+    <div className={Card}>
+      <h4>{title}</h4>
+      <img src={lineIcon}></img>
+      <p>{duration}</p>
+      <h3>{price}</h3>
     </div>
   )
 }

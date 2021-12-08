@@ -1,178 +1,57 @@
 import React from "react"
-import PriceCard from "../components/pricecard"
-import ProductCard from "../components/productCard"
-import GoldCard from "../components/goldCard"
-import BusinessCard from "../components/businessCard"
+import PriceCard from "../components/PriceCard"
+import GoldAd from "../components/GoldAd"
+import ProductCardSponsor from "../components/productCardSponsor"
+import SocialProductCard from "../components/socialProductCard"
+import SilverBizCard from "../components/silverBizCard"
+import GoldBizCard from "../components/GoldCard"
 import BannerCard from "../components/bannerCard"
 import * as styles from "./pricing.module.css"
 import SellerBagde from "../images/seller badge.svg"
 
 const pricing = () => {
-  const electronics = [
-    {
-      category: "electronics",
-      price: "kes.200",
-    },
-    {
-      category: "electronics",
-      price: "kes.200",
-    },
-    {
-      category: "electronics",
-      price: "kes.200",
-    },
-    {
-      category: "electronics",
-      price: "kes.200",
-    },
-    {
-      category: "electronics",
-      price: "kes.200",
-    },
-    {
-      category: "electronics",
-      price: "kes.200",
-    },
-    {
-      category: "electronics",
-      price: "kes.200",
-    },
-    {
-      category: "electronics",
-      price: "kes.200",
-    },
-  ]
-
-  const gold = [
-    {
-      category: "electronics",
-      price: "kes.200",
-    },
-    {
-      category: "electronics",
-      price: "kes.200",
-    },
-    {
-      category: "electronics",
-      price: "kes.200",
-    },
-  ]
-  const bizCard = [
-    {
-      title: "Gold Business",
-      duration: "1 year",
-      price: "Ksh 45,000",
-    },
-    {
-      title: "Gold Business",
-      duration: "6 months",
-      price: "Ksh 25,000",
-    },
-    {
-      title: "Gold Business",
-      duration: "3 months",
-      price: "Ksh 13,500",
-    },
-    {
-      title: "Gold Business",
-      duration: "1 month",
-      price: "Ksh 5,000",
-    },
-  ]
-  const brandProduct = [
-    {
-      duration: "1 year",
-      price: "Ksh 2,500",
-    },
-  ]
-
-  const banner = [
-    {
-      title: " desktop",
-      duration: "1 month ",
-      price: "ksh 25,000",
-    },
-    {
-      title: " desktop",
-      duration: "1 month ",
-      price: "ksh 25,000",
-    },
-    {
-      title: " desktop",
-      duration: "1 month ",
-      price: "ksh 25,000",
-    },
-    {
-      title: " desktop",
-      duration: "1 month ",
-      price: "ksh 25,000",
-    },
-    {
-      title: " desktop",
-      duration: "1 month ",
-      price: "ksh 25,000",
-    },
-    {
-      title: " desktop",
-      duration: "1 month ",
-      price: "ksh 25,000",
-    },
-    {
-      title: " desktop",
-      duration: "1 month ",
-      price: "ksh 25,000",
-    },
-  ]
-
   return (
     <>
-      <section>
+      <section style={{ padding: "40px" }}>
         <div className={styles.container}>
           <h1>Silver Ad prices /Category</h1>
           <p>upgrade your ad increase visibility</p>
           <div className={styles.priceCardWrapper}>
             <div className={styles.priceCards}>
-              {electronics.map((item, index) => (
-                <PriceCard
-                  key={index}
-                  category={item.category}
-                  price={item.price}
-                />
-              ))}
+              <PriceCard />
             </div>
           </div>
         </div>
       </section>
-      <section style={{ backgroundColor: "#F3F3F3" }}>
+      <section
+        style={{
+          backgroundColor: "#F3F3F3",
+          padding: "40px",
+        }}
+      >
         <div className={styles.container}>
           <h1>Gold Ad prices</h1>
         </div>
         <div className={styles.priceCardWrapper}>
           <div className={styles.priceCards}>
-            {gold.map((item, index) => (
-              <GoldCard
-                key={index}
-                category={item.duration}
-                price={item.price}
-              />
-            ))}
+            <GoldAd />
+          </div>
+          <div className={styles.container}>
+            <ul>
+              <li>Get higher priority in searches</li>
+              <li>Appear in the Home Page carousel</li>
+            </ul>
           </div>
         </div>
       </section>
-      <section>
+      <section style={{ padding: "40px" }}>
         <div className={styles.container}>
           <h1>Business Pages</h1>
           <p>upgrade your ad increase visibility</p>
         </div>
         <div className={styles.priceCardWrapper}>
           <div className={styles.priceCards}>
-            {bizCard.map((item, index) => (
-              <BusinessCard
-                key={index}
-                duration={item.duration}
-                price={item.price}
-              />
-            ))}
+            <GoldBizCard />
           </div>
         </div>
         <div className={styles.container}>
@@ -185,17 +64,11 @@ const pricing = () => {
         </div>
         <div className={styles.priceCardWrapper}>
           <div className={styles.priceCards}>
-            {bizCard.map((item, index) => (
-              <BusinessCard
-                key={index}
-                duration={item.duration}
-                price={item.price}
-              />
-            ))}
+            <SilverBizCard />
           </div>
         </div>
       </section>
-      <section style={{ backgroundColor: "#F3F3F3" }}>
+      <section style={{ padding: "40px" }}>
         <div className={styles.badgeContainer}>
           <h1>Verified Seller Badge</h1>
           <p>Get verified and join our trusted seller group</p>
@@ -206,7 +79,7 @@ const pricing = () => {
           </p>
         </div>
       </section>
-      <section>
+      {/* <section style={{ padding: "40px" }}>
         <div className={styles.container}>
           <h1>Price Per Ad</h1>
           <p>
@@ -216,7 +89,7 @@ const pricing = () => {
         </div>
         <div className={styles.priceCardWrapper}>
           <div className={styles.priceCards}>
-            {electronics.map((item, index) => (
+            {silverData.map((item, index) => (
               <PriceCard
                 key={index}
                 category={item.category}
@@ -229,8 +102,8 @@ const pricing = () => {
             to upgrade your ad.
           </p>
         </div>
-      </section>
-      <section style={{ backgroundColor: "#F3F3F3" }}>
+      </section> */}
+      <section style={{ backgroundColor: "#F3F3F3", padding: "40px" }}>
         <div className={styles.brandContainer}>
           <h1>Branding products</h1>
           <h1>Category Sponsor</h1>
@@ -241,13 +114,7 @@ const pricing = () => {
         </div>
         <div className={styles.productCardWrapper}>
           <div className={styles.productCard}>
-            {brandProduct.map((item, index) => (
-              <ProductCard
-                key={index}
-                category={item.duration}
-                price={item.price}
-              />
-            ))}
+            <ProductCardSponsor />
           </div>
         </div>
         <div className={styles.brandContainer}>
@@ -260,17 +127,11 @@ const pricing = () => {
         </div>
         <div className={styles.productCardWrapper}>
           <div className={styles.productCard}>
-            {brandProduct.map((item, index) => (
-              <ProductCard
-                key={index}
-                category={item.duration}
-                price={item.price}
-              />
-            ))}
+            <SocialProductCard />
           </div>
         </div>
       </section>
-      <section>
+      <section style={{ padding: "60px" }}>
         <div className={styles.brandContainer}>
           <h1>Banners</h1>
 
@@ -280,11 +141,7 @@ const pricing = () => {
           </p>
         </div>
         <div className={styles.bannerCardWrapper}>
-          <div className={styles.bannerCards}>
-            {banner.map((item, index) => (
-              <BannerCard key={index} title={item.title} price={item.price} />
-            ))}
-          </div>
+          <BannerCard />
         </div>
       </section>
     </>

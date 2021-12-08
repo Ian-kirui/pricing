@@ -1,4 +1,4 @@
-.priceCard {
+.Card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,7 +6,12 @@
   background: #ffffff;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
-  max-width: 200px;
-  margin-right: 26px;
-  padding: 10px 10px 12px 10px;
+  width: 300px;
+  height: 150px;
+}
+.CardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
 }

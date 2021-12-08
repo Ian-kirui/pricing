@@ -1,14 +1,51 @@
 import React from "react"
 import lineIcon from "../images/line.svg"
-import { card } from "./bannerCard.module.css"
+import { card, bannerCards } from "./bannerCard.module.css"
 
 function App() {
   return (
-    <BannerCard
-      title="Desktop/Mobile Homepage (top)"
-      duration="1 month"
-      price="10,000"
-    />
+    <div className={bannerCards}>
+      <BannerCard
+        title="Desktop/Mobile Homepage (top)"
+        duration="1 week"
+        price="KSh 20,000"
+      />
+      <BannerCard
+        title="Desktop/Mobile Homepage (bottom)"
+        duration="1 week"
+        price="KSh 10,000"
+      />
+      <BannerCard
+        title="Desktop/Mobile Category Page (top)"
+        duration="1 week"
+        price="KSh 15,000"
+      />
+      <BannerCard
+        title="Desktop/Mobile Category Page (sidebar)"
+        duration="1 week"
+        price="KSh 5,000"
+      />
+      <BannerCard
+        title="Desktop/Mobile Category Page (bottom)"
+        duration="1 week"
+        price="KSh 10,000"
+      />
+      <BannerCard
+        title="Desktop/Mobile Category Page (top)"
+        duration="1 week"
+        price="KSh 15,000"
+      />
+      <BannerCard
+        title="Desktop/Mobile Category Page (bottom)"
+        duration="1 week"
+        price="KSh 10,000"
+      />
+      <BannerCard
+        title="Newsletter Banner"
+        duration="1 week"
+        price="KSh 5,000"
+      />
+    </div>
   )
 }
 export default App
@@ -20,8 +57,8 @@ function BannerCard(props) {
     <div className={card}>
       <h4>{title}</h4>
       <img src={lineIcon}></img>
-      <h3>{duration}</h3>
-      <p>{price}</p>
+      <h3>{price}</h3>
+      <p>{duration}</p>
     </div>
   )
 }
